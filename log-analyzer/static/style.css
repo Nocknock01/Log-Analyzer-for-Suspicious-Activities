@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+header {
+    background: #020617;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #1e293b;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1.5rem 2rem;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background: #111827;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid #1f2937;
+    flex: 1;
+}
+
+.card.danger {
+    border-color: #b91c1c;
+}
+
+.controls {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    margin-right: 0.5rem;
+}
+
+input[type="text"] {
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid #4b5563;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+button {
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.error {
+    color: #f97316;
+    margin-top: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+th,
+td {
+    border: 1px solid #1f2937;
+    padding: 0.4rem 0.6rem;
+    text-align: left;
+}
+
+tr.suspicious {
+    background: #1f2937;
+}

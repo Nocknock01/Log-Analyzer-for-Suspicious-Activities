@@ -1,0 +1,7 @@
+2025-12-08 10:00:01 user=alice ip=192.168.1.10 status=FAILED
+2025-12-08 10:00:10 user=alice ip=192.168.1.10 status=FAILED
+2025-12-08 10:00:20 user=alice ip=192.168.1.10 status=FAILED
+2025-12-08 10:00:30 user=alice ip=192.168.1.10 status=FAILED
+2025-12-08 10:00:40 user=alice ip=192.168.1.10 status=FAILED
+2025-12-08 10:05:00 user=alice ip=192.168.1.10 status=SUCCESS
+2025-12-08 11:00:01 user=bob ip=10.0.0.5 status=FAILED

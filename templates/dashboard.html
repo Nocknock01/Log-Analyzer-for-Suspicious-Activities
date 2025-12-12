@@ -1,0 +1,76 @@
+{% extends "base.html" %} {% block content %}
+<section class="stats">
+    <div class="card">
+        <h2>Total Events</h2>
+        <p>{{ stats.total_events }}</p>
+    </div>
+    <div class="card danger">
+        <h2>Suspicious Events</h2>
+        <p>{{ stats.total_suspicious }}</p>
+    </div>
+    <div class="card">
+        <h2>Log File</h2>
+        <p>{{ stats.log_path }}</p>
+    </div>
+</section>
+
+<section class="controls">
+    <form method="post">
+        <label for="log_path">Log file path:</label>
+        <input type="text" id="log_path" name="log_path" value="{{ stats.log_path }}">
+        <button type="submit">Reload</button>
+    </form>
+
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+</section>
+
+<section>
+    <h2>Suspicious Events (Brute-force etc.)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>User</th>
+                <th>IP</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for e in suspicious %}
+            <tr class="suspicious">
+                <td>{{ e.timestamp }}</td>
+                <td>{{ e.user }}</td>
+                <td>{{ e.ip }}</td>
+                <td>{{ e.status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>All Events</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>User</th>
+                <th>IP</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for e in events %}
+            <tr>
+                <td>{{ e.timestamp }}</td>
+                <td>{{ e.user }}</td>
+                <td>{{ e.ip }}</td>
+                <td>{{ e.status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}

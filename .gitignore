@@ -1,0 +1,12 @@
+﻿# Python & editor
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+
+# Virtual env
+.venv/
+
+# Ignore real logs, allow example logs
+data/*.log
+!data/*.example.log
