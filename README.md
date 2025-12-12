@@ -7,7 +7,7 @@ Features
 
 Parse simple timestamp user=... ip=... status=... log lines
 
-Detect brute-force style attacks (N failures within a short time window)
+Detect brute force style attacks (N failures within a short time window)
 
 Web dashboard: totals, suspicious events, full event table
 
@@ -187,3 +187,4 @@ Describe changes & add tests where applicable
 License
 
 Add a license of your choice (e.g., MIT). Example: create a LICENSE file with the MIT text.
+
